@@ -11,7 +11,6 @@ body {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url(https://images.unsplash.com/photo-1446771326090-d910bfaf00f6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9216e1a8598a8530ce329b41a8f3725d);
     background-size: cover;
     background-position: center center;
 }
@@ -195,7 +194,7 @@ Burger king
 .open-overlay span {
     display: block;
     height: 1px;
-    background-color: #fff;
+    background-color: #0088bb;
     cursor: pointer;
     margin-top: 8px;
 }
@@ -252,7 +251,7 @@ Animation keyframes
 
 @keyframes animate-top-bar {
     0% {
-        background-color: #fff;
+        background-color: #0088bb;
     }
     50% {
         -webkit-transform: translateY(9px);
@@ -261,18 +260,18 @@ Animation keyframes
     80% {
         -webkit-transform: translateY(5px);
         transform: translateY(5px);
-        background-color: #fff;
+        background-color: #0088bb;
     }
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
-        background-color: #fff;
+        background-color: #0088bb;
     }
 }
 
 @keyframes animate-bottom-bar {
     0% {
-        background-color: #fff;
+        background-color: #0088bb;
     }
     50% {
         -webkit-transform: translateY(-9px);
@@ -281,12 +280,12 @@ Animation keyframes
     80% {
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
-        background-color: #fff;
+        background-color: #0088bb;
     }
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
-        background-color: #fff;
+        background-color: #0088bb;
     }
 }
 
@@ -318,7 +317,7 @@ Animation keyframes
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
-        background-color: #fff;
+        background-color: #29363b;
     }
 }
 
@@ -338,7 +337,7 @@ Animation keyframes
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
-        background-color: #fff;
+        background-color: #29363b;
     }
 }
 
@@ -350,7 +349,7 @@ Animation keyframes
         background-color: #29363b;
     }
     100% {
-        background-color: #fff;
+        background-color: #29363b;
     }
 }
 .home a {
