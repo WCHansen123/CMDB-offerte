@@ -18,11 +18,11 @@
 <div class="overlay-navigation">
   <nav role="navigation">
     <ul>
-      <li><a href="#" data-content="The beginning">Home</a></li>
-      <li><a href="#" data-content="Curious?">About</a></li>
+      <li><a href="/" data-content="The beginning">Home</a></li>
+      <li><a href="{{ URL::to('products') }}" data-content="take a look!">Products</a></li>
       <li><a href="#" data-content="I got game">Skills</a></li>
       <li><a href="#" data-content="Only the finest">Works</a></li>
-      <li><a href="#" data-content="Don't hesitate">Contact</a></li>
+      <li><a href="/dashboard" data-content="please login">login</a></li>
     </ul>
   </nav>
 </div>
@@ -38,7 +38,7 @@
 
   <img class="w3-image" src="/img/bg1.jpg" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BR</b></span> <span class="w3-hide-small w3-text-light-grey">Architects</span></h1>
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Dev</b></span> <span class="w3-hide-small w3-text-light-grey">EpicIT</span></h1>
   </div>
 </header>
 </section>
@@ -47,7 +47,7 @@
 
 <!-- Project Section -->
 <div class="w3-container w3-padding-32" id="projects">
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Products</h3>
 </div>
 
 <div class="w3-row-padding">
@@ -115,30 +115,23 @@
 
 <div class="w3-row-padding w3-grayscale">
   <div class="w3-col l3 m6 w3-margin-bottom">
-    <img src="/img/product_frame.png" alt="John" style="width:100%">
-    <h3>John Doe</h3>
-    <p class="w3-opacity">CEO & Founder</p>
+    <img src="/img/pp1.jpg" alt="Wilco" style="width:100%">
+    <h3>Wilco hansen</h3>
+    <p class="w3-opacity">Developer</p>
     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
     <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
   </div>
   <div class="w3-col l3 m6 w3-margin-bottom">
-    <img src="/img/product_frame.png" alt="Jane" style="width:100%">
-    <h3>Jane Doe</h3>
-    <p class="w3-opacity">Architect</p>
+    <img src="/img/pp2.jpg" alt="Theus" style="width:100%">
+    <h3>Theus de zeuw</h3>
+    <p class="w3-opacity">Developer</p>
     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
     <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
   </div>
   <div class="w3-col l3 m6 w3-margin-bottom">
-    <img src="/img/product_frame.png" alt="Mike" style="width:100%">
-    <h3>Mike Ross</h3>
-    <p class="w3-opacity">Architect</p>
-    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-  </div>
-  <div class="w3-col l3 m6 w3-margin-bottom">
-    <img src="/img/product_frame.png" alt="Dan" style="width:100%">
-    <h3>Dan Star</h3>
-    <p class="w3-opacity">Architect</p>
+    <img src="/img/pp3.jpg" alt="Tony" style="width:100%">
+    <h3>Tony Elia Mokhtar</h3>
+    <p class="w3-opacity">Developer</p>
     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
     <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
   </div>
