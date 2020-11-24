@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ URL::asset('css/nav.css') }}"/>
-    <title>Document</title>
+    <!-- products cards styling-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ URL::asset('css/productscards.css') }}"/>
+    
+    <title>products</title>
     
 
 </head>
@@ -43,42 +49,23 @@
   </div>
 </header>
 </section>
-<div class="container">
+<div class="container mt-5">
 
-<div class="row">
-  @foreach($products as $product)
-  <div class="card float-left" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{$product->name}}</h5><p class="card-title">€{{$product->price}}</p>
-      <p class="card-text">{{$product->description}}</p>
-      <a href="/product/{{ $product->id }}" class="btn btn-primary">product bekijken</a>
-    </div>
-  </div>
-  @endforeach
-</div>
-
-    
-        <!-- <div class="col-3">
-            <div class="card float-left" style="width: 18rem;">
-                <div style="max-width: 150px; max-height: 150px;">
-                    <img src="{{$product->img_url}}" class="card-img-top img-responsive  " style="margin-left: 50%; margin-right: 50%; max-width: 150px; max-height: 150px;"  alt="productfoto">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">{{$product->name}}</h5><p class="card-title">€{{$product->price}}</p>
-                    <p class="card-text">{{$product->description}}</p>
-                    <a href="/product/{{ $product->id }}" class="btn btn-primary">product bekijken</a>
-                </div>
+<div class="row d-flex justify-content-center g-1">
+@foreach($products as $product)
+        <div class="col-md-4">
+            <div class="product text-center mt-3 "> <img src="/img/product_frame.png" width="250">
+                <div class="about text-left px-3">
+                    <h4>{{$product->name}}</h4> <span class="text-muted">{{$product->description}}</span>
+                    <h3>€{{$product->price}}</h3>
+                </div> <span class="dot"><span class="inner-dot"><i class="fa fa-plus"></i></span></span>
             </div>
         </div>
-
+        @endforeach
     </div>
-</div> -->
-
-
-
-
-
+    
+</div>
+<!-- <a href="/product/{{ $product->id }}" class="btn btn-primary">product bekijken</a> -->
 <script src="{{ URL::asset('js/nav.js')}}"></script>
 </body>
 
