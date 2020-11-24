@@ -63,9 +63,7 @@
         </div>
         @endforeach
     </div>
-    
 </div>
-<!-- <a href="/product/{{ $product->id }}" class="btn btn-primary">product bekijken</a> -->
 <script src="{{ URL::asset('js/nav.js')}}"></script>
 </body>
 
