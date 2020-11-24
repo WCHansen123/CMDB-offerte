@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="{{ URL::asset('css/productscards.css') }}"/>
     
     <title>products</title>
-    
-
 </head>
 <body>
 <!-- Header -->
