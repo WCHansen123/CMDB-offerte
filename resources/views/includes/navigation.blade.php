@@ -10,20 +10,29 @@
 					<li><a href="#" class="nav-item nav-link" data-toggle="dropdown">Configurator</a></li>
 					<li><a href="/dashboard" class="nav-item nav-link">Shoppingcart</a></li>
 					<li class="dropdown">
-						<a href="#" class="nav-item nav-link" data-toggle="dropdown">Account</a>
+						<!-- <a href="#" class="nav-item nav-link" data-toggle="dropdown">Account</a>
 						<div class="dropdown-menu">
-							<!-- <a href="/register" class="dropdown-item">Register</a>
-							<a href="/dashboard" class="dropdown-item">Login</a> -->
-
 							@if(Auth::check())
                         	<a href="#" class="dropdown-item">Profile</a>
-                        	<!-- <li role="separator" class="divider"></li> -->
                         	<a href="/logout" class="dropdown-item">Logout</a>
 							@else
 							<a href="/register" class="dropdown-item">Register</a>
                         	<a href="/dashboard" class="dropdown-item">Login</a>
                         	@endif
+						</div> -->
+						@if(Auth::check())
+						<a href="#" class="nav-item nav-link" data-toggle="dropdown">{{{ Auth::user()->name}}}</a>
+						<div class="dropdown-menu">	
+                        	<a href="#" class="dropdown-item">Profile</a>
+                        	<a href="/logout" class="dropdown-item">Logout</a>
 						</div>
+						@else
+						<a href="#" class="nav-item nav-link" data-toggle="dropdown">Account</a>
+						<div class="dropdown-menu">
+							<a href="/register" class="dropdown-item">Register</a>
+                        	<a href="/dashboard" class="dropdown-item">Login</a>
+						</div>
+						@endif
 					</li>
 					
 				</ul>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ProductController;
 
 /*
@@ -23,3 +24,9 @@ Route::resource('products', ProductController::class);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
+
+
+Route::get('/logout', function () {
+    Auth::logout();
+    return view('home');
+});
