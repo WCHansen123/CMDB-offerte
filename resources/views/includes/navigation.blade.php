@@ -6,7 +6,8 @@
 			<div id="main-nav" class="collapse navbar-collapse">
 				<ul class="navbar-nav ml-auto">
 					<li><a href="/" class="nav-item nav-link active">Home</a></li>
-					<li><a href="#" class="nav-item nav-link">Products</a></li>
+					<li><a href="/products" class="nav-item nav-link">Products</a></li>
+
 					<li><a href="#" class="nav-item nav-link" data-toggle="dropdown">Configurator</a></li>
 					<li><a href="/dashboard" class="nav-item nav-link">Shoppingcart</a></li>
 					<li class="dropdown">
@@ -53,7 +54,7 @@
 		<a href="#" class="navbar-brand">CMDB-Offerte</a>
 		<ul>
 			<li><a class="b-link" href="#">Home</a></li>
-			<li><a class="b-link" href="#">Products</a></li>
+			<li><a class="b-link" href="/products">Products</a></li>
 			<li><a class="b-link" href="#">Configurator</a></li>
 			<li><a class="b-link" href="#">Shoppingcart</a></li>
 			<li><a class="b-link" href="/dashboard">Account</a></li>
