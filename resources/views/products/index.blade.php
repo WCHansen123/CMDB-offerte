@@ -15,7 +15,10 @@
                 <div class="about text-left px-3">
                     <h4>{{$product->name}}</h4> <span class="text-muted">{{$product->description}}</span>
                     <h3>€{{$product->price}}</h3>
-                </div> <span class="dot"><span class="inner-dot"><i class="fa fa-plus"></i></span></span>
+                </div> 
+
+                    <a href="{{route('addToCart', ['id' => $product->id])}}"><span class="dot"><span class="inner-dot"><i class="fa fa-plus"></i></span></span></a>
+                
             </div>
         </div>
         @endforeach
