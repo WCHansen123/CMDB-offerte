@@ -7,7 +7,6 @@
 				<ul class="navbar-nav ml-auto">
 					<li><a href="/" class="nav-item nav-link active">Home</a></li>
 					<li><a href="/products" class="nav-item nav-link">Products</a></li>
-
 					<li><a href="#" class="nav-item nav-link" data-toggle="dropdown">Configurator</a></li>
 					<li><a href="/dashboard" class="nav-item nav-link">Shoppingcart</a></li>
 					<li class="dropdown">
