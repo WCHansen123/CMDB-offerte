@@ -22,7 +22,6 @@
         @endforeach
     </div>
 </div>
-
 @stop
 <!-- Footer -->
 @extends('includes\footer')
