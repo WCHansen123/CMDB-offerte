@@ -6,21 +6,23 @@
 <!-- Page Content -->
 @section('content')
 
-<div class="container">
+<div class="container mt-5">
 
-<div class="row">
-  @foreach($products as $product)
-  <div class="card float-left" style="width: 18rem;">
-    <img class="card-img-top" src="/img/product_frame.png" alt="Card image cap">
-
-    <div class="card-body">
-      <h5 class="card-title">{{$product->name}}</h5><p class="card-title">€{{$product->price}}</p>
-      <p class="card-text">{{$product->description}}</p>
-      <a href="/product/{{ $product->id }}" class="btn btn-primary">product bekijken</a>
+    <div class="row d-flex justify-content-center g-1">
+    @foreach($products as $product)
+        <div class="col-md-4">
+            <div class="product text-center"> <img src="/img/product_frame.png" width="250">
+                <div class="about text-left px-3">
+                    <h4>{{$product->name}}</h4> <span class="text-muted">{{$product->description}}</span>
+                    <h3>€{{$product->price}}</h3>
+                </div> <span class="dot"><span class="inner-dot"><i class="fa fa-plus"></i></span></span>
+            </div>
+        </div>
+        @endforeach
     </div>
-  </div>
-  @endforeach
+    
 </div>
+
 @stop
 <!-- Footer -->
 @extends('includes\footer')
