@@ -54,7 +54,7 @@ class ProductController extends Controller
         $product = Product::find($id);
 
         // show the view and pass the product to it
-        return View::make('show.blade.php')
+        return View::make('products.show')
             ->with('product', $product);
     }
 

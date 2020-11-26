@@ -1,18 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ URL::asset('css/nav.css') }}"/>
-    <title>Document</title>
+<!-- Head -->
+@extends('includes\layout')
+<title>CMDB-Offerte | Products</title>
+<!-- Navbar -->
+@extends('includes\navigation')
 
+<!-- Page Content -->
+@section('content')
 
-</head>
-<body>
+    <div class="container">
+        <!-- Portfolio Item Heading -->
+{{--            <h1 class="my-4">{{$product->name}}</h1>--}}
 
-</body>
-</html>
+            <!-- Portfolio Item Row -->
+            <div class="row">
+
+                <div class="col-md-8" style=";">
+                    <img style="max-height:500px; max-width:500px;" class="img-fluid" src="/img/product_frame.png" alt="">
+                </div>
+                <div class="col-md-4" >
+                    <h3 class="my-3">{{$product->name}}</h3>
+                    <p>{{$product->description}}</p>
+                    <p>€{{$product->price}}</p>
+{{--                    <a href="{{route('product.addToCart', ['id' => $product->id])}}" class="btn btn-success w-25"><i class="fas fa-cart-plus"></i></a>--}}
+                </div>
+            </div>
+
+@stop
