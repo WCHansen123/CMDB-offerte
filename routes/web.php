@@ -36,4 +36,3 @@ Route::get('/shoping-cart', [ProductController::class, 'getCart'])->name('shoppi
 Route::get('/reduce/{id}', [ProductController::class, 'getReduceByOne'])->name('reduce');
 Route::get('/remove/{id}', [ProductController::class, 'getRemoveItem'])->name('remove');
 Route::get('/shopping-cart', function(){return view('shopping-cart');})->name('shopping-cart');
-
