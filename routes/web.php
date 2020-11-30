@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ProductController;
@@ -15,11 +16,7 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-
+Route::get('/', [PageController::class, 'index'])->name('home');
 
 Route::resource('products', ProductController::class);
 
@@ -27,10 +24,11 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
 
+
 Route::get('/logout', function () {
     Auth::logout();
     return view('home');
-});
+
 // shoping cart routes //
 Route::get('/add-to-cart/{id}', [ProductController::class, 'getAddToCart'])->name('addToCart');
 Route::get('/shoping-cart', [ProductController::class, 'getCart'])->name('shoppingCart');
