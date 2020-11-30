@@ -51,6 +51,7 @@
             <li class="nav-item form-inline"><a class="nav-link navbar-login" href="{{route('shoppingCart')}}">Shoppingcart</a>
             <span class="badge badge-pill badge-warning">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}}</span>                     
             </li>
+
             <li class="nav-item form-inline">
                 @if(Auth::check())
                     <div class="dropdown">
@@ -59,7 +60,6 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <a class="dropdown-item" href="{{route('profile.show', ['id' => Auth::user()->id])}}">
-                                
                                 User Profile
                             </a>
                             <div class="dropdown-divider"></div>
