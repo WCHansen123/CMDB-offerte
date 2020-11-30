@@ -1,6 +1,5 @@
 <!-- Head -->
 @extends('includes\layout')
-
 <!-- Page Content -->
 @section('content')
     <div class="container mt-5">
@@ -14,6 +13,7 @@
                     </div>
                         <a href="{{route('addToCart', ['id' => $product->id])}}"><span class="dot"><span class="inner-dot"><i class="fa fa-plus"></i></span></span></a>
                 </div>
+
             </div>
             @endforeach
         </div>
