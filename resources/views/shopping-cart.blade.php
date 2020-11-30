@@ -1,8 +1,6 @@
 @extends('includes\layout')
-<title>shoping cart</title>
-<!-- Navbar -->
-@extends('includes\navigation')
-<!-- Page Content -->
+<title>Shoping cart</title>
+
 @section('content')
 <div class="container" >
         @if(Session::has('cart'))
@@ -49,8 +47,3 @@
         @endif
 </div>
 @stop
-<!-- Footer -->
-@extends('includes\footer')
-
-
-
