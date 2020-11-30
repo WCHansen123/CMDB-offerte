@@ -1,5 +1,7 @@
 @extends('includes\layout')
-<title>Shoping cart</title>
+
+<title>shoping cart</title>
+
 @section('content')
 <div class="container" >
         @if(Session::has('cart'))
