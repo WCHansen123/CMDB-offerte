@@ -48,10 +48,14 @@
                     </div>
                 </li>
             </ul>
+<<<<<<< Updated upstream
             <li class="nav-item form-inline"><a class="nav-link navbar-login" href="{{route('shoppingCart')}}">Shoppingcart</a>
             <span class="badge badge-pill badge-warning">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}}</span>                     
             </li>
 
+=======
+            <li class="nav-item form-inline"><a class="nav-link navbar-login" href="{{route('shoppingCart')}}">Shoppincart</a></li>
+>>>>>>> Stashed changes
             <li class="nav-item form-inline">
                 @if(Auth::check())
                     <div class="dropdown">
