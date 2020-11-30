@@ -1,9 +1,6 @@
 @extends('includes\layout')
-<<<<<<< Updated upstream
-<title>Shoping cart</title>
-=======
+
 <title>shoping cart</title>
->>>>>>> Stashed changes
 
 @section('content')
 <div class="container" >
