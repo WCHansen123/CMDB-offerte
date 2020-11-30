@@ -73,7 +73,6 @@
                         </svg>
                         Login
                     </a>
-
                 @endif
             </li>
         </div>
