@@ -1,3 +1,5 @@
 @section('navigation')
+
 @show
+
 @stop
