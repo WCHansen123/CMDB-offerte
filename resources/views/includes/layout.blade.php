@@ -48,6 +48,10 @@
                     </div>
                 </li>
             </ul>
+            <li class="nav-item form-inline"><a class="nav-link navbar-login" href="{{route('shoppingCart')}}">Shoppingcart</a>
+            <span class="badge badge-pill badge-warning">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}}</span>                     
+            </li>
+
             <li class="nav-item form-inline">
                 @if(Auth::check())
                     <div class="dropdown">
@@ -56,9 +60,6 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <a class="dropdown-item" href="{{route('profile.show', ['id' => Auth::user()->id])}}">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                </svg>
                                 User Profile
                             </a>
                             <div class="dropdown-divider"></div>
@@ -67,6 +68,9 @@
                     </div>
                 @else
                     <a class="nav-link navbar-login" href="{{route('login') }}">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
                         Login
                     </a>
 
