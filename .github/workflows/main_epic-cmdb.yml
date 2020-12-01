@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'epic-cmdb'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_04e37adf92734712b134cbe1125969da }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_b2c0f6d1b4954a49ac97474820429f1f }}
         package: ${{env.DOTNET_ROOT}}/myapp 
