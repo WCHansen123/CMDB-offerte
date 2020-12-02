@@ -30,7 +30,7 @@
                                     </button>
 
                                     <button v-else class="flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
-                                        <div>{{ $page.user.name }} ]-[ {{ $page.user.id }}</div>
+                                        <div>{{ $page.user.name }}</div>
 
                                         <div class="ml-1">
                                             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -57,6 +57,7 @@
                                     <div class="border-t border-gray-100"></div>
 
                                     <!-- Team Management -->
+                                    <div v-if="$page.user.role === 'admin'">
                                     <template v-if="$page.jetstream.hasTeamFeatures">
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             Manage Team
@@ -72,6 +73,7 @@
                                         </jet-dropdown-link>
 
                                         <div class="border-t border-gray-100"></div>
+                                        
 
                                         <!-- Team Switcher -->
                                         <div class="block px-4 py-2 text-xs text-gray-400">
@@ -91,6 +93,7 @@
 
                                         <div class="border-t border-gray-100"></div>
                                     </template>
+                                    </div>
 
                                     <!-- Authentication -->
                                     <form @submit.prevent="logout">
@@ -211,41 +214,45 @@
 </template>
 
 <script>
-    import JetApplicationMark from '@/Jetstream/ApplicationMark'
-    import JetDropdown from '@/Jetstream/Dropdown'
-    import JetDropdownLink from '@/Jetstream/DropdownLink'
-    import JetNavLink from '@/Jetstream/NavLink'
-    import JetResponsiveNavLink from '@/Jetstream/ResponsiveNavLink'
+import JetApplicationMark from "@/Jetstream/ApplicationMark";
+import JetDropdown from "@/Jetstream/Dropdown";
+import JetDropdownLink from "@/Jetstream/DropdownLink";
+import JetNavLink from "@/Jetstream/NavLink";
+import JetResponsiveNavLink from "@/Jetstream/ResponsiveNavLink";
 
-    export default {
-        components: {
-            JetApplicationMark,
-            JetDropdown,
-            JetDropdownLink,
-            JetNavLink,
-            JetResponsiveNavLink,
+export default {
+  components: {
+    JetApplicationMark,
+    JetDropdown,
+    JetDropdownLink,
+    JetNavLink,
+    JetResponsiveNavLink,
+  },
+
+  data() {
+    return {
+      showingNavigationDropdown: false,
+    };
+  },
+
+  methods: {
+    switchToTeam(team) {
+      this.$inertia.put(
+        route("current-team.update"),
+        {
+          team_id: team.id,
         },
-
-        data() {
-            return {
-                showingNavigationDropdown: false,
-            }
-        },
-
-        methods: {
-            switchToTeam(team) {
-                this.$inertia.put(route('current-team.update'), {
-                    'team_id': team.id
-                }, {
-                    preserveState: false
-                })
-            },
-
-            logout() {
-                axios.post(route('logout').url()).then(response => {
-                    window.location = '/';
-                })
-            },
+        {
+          preserveState: false,
         }
-    }
+      );
+    },
+
+    logout() {
+      axios.post(route("logout").url()).then((response) => {
+        window.location = "/";
+      });
+    },
+  },
+};
 </script>
