@@ -57,6 +57,7 @@
                                     <div class="border-t border-gray-100"></div>
 
                                     <!-- Team Management -->
+                                    <div v-if="$page.user.role === 'admin'">
                                     <template v-if="$page.jetstream.hasTeamFeatures">
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             Manage Team
@@ -72,6 +73,7 @@
                                         </jet-dropdown-link>
 
                                         <div class="border-t border-gray-100"></div>
+                                        
 
                                         <!-- Team Switcher -->
                                         <div class="block px-4 py-2 text-xs text-gray-400">
@@ -91,6 +93,7 @@
 
                                         <div class="border-t border-gray-100"></div>
                                     </template>
+                                    </div>
 
                                     <!-- Authentication -->
                                     <form @submit.prevent="logout">
@@ -211,41 +214,45 @@
 </template>
 
 <script>
-    import JetApplicationMark from '@/Jetstream/ApplicationMark'
-    import JetDropdown from '@/Jetstream/Dropdown'
-    import JetDropdownLink from '@/Jetstream/DropdownLink'
-    import JetNavLink from '@/Jetstream/NavLink'
-    import JetResponsiveNavLink from '@/Jetstream/ResponsiveNavLink'
+import JetApplicationMark from "@/Jetstream/ApplicationMark";
+import JetDropdown from "@/Jetstream/Dropdown";
+import JetDropdownLink from "@/Jetstream/DropdownLink";
+import JetNavLink from "@/Jetstream/NavLink";
+import JetResponsiveNavLink from "@/Jetstream/ResponsiveNavLink";
 
-    export default {
-        components: {
-            JetApplicationMark,
-            JetDropdown,
-            JetDropdownLink,
-            JetNavLink,
-            JetResponsiveNavLink,
+export default {
+  components: {
+    JetApplicationMark,
+    JetDropdown,
+    JetDropdownLink,
+    JetNavLink,
+    JetResponsiveNavLink,
+  },
+
+  data() {
+    return {
+      showingNavigationDropdown: false,
+    };
+  },
+
+  methods: {
+    switchToTeam(team) {
+      this.$inertia.put(
+        route("current-team.update"),
+        {
+          team_id: team.id,
         },
-
-        data() {
-            return {
-                showingNavigationDropdown: false,
-            }
-        },
-
-        methods: {
-            switchToTeam(team) {
-                this.$inertia.put(route('current-team.update'), {
-                    'team_id': team.id
-                }, {
-                    preserveState: false
-                })
-            },
-
-            logout() {
-                axios.post(route('logout').url()).then(response => {
-                    window.location = '/';
-                })
-            },
+        {
+          preserveState: false,
         }
-    }
+      );
+    },
+
+    logout() {
+      axios.post(route("logout").url()).then((response) => {
+        window.location = "/";
+      });
+    },
+  },
+};
 </script>
