@@ -25432,11 +25432,7 @@ var render = function() {
                                     },
                                     [
                                       _c("div", [
-                                        _vm._v(
-                                          _vm._s(_vm.$page.user.name) +
-                                            " ]-[ " +
-                                            _vm._s(_vm.$page.user.id)
-                                        )
+                                        _vm._v(_vm._s(_vm.$page.user.name))
                                       ]),
                                       _vm._v(" "),
                                       _c("div", { staticClass: "ml-1" }, [
