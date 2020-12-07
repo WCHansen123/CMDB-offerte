@@ -47,13 +47,15 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param $id
+     * @param $product
      * @return Response
      */
-    public function show($id)
+    public function show($product)
     {
-        // get the product
-        $product = Product::find($id);
+        // $product doesnt work as $id
+
+        // get product by id
+        $product = Product::find($product);
 
         // show the view and pass the product to it
         return View::make('products.show')
