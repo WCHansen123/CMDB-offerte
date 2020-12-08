@@ -24,6 +24,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/account/orders', function () {
+    return Inertia\Inertia::render('Order/Show');
+})->name('orders');
+
 Route::get('/logout', function () {
     Auth::logout();
     return view('home');

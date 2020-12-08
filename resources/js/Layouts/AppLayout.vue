@@ -18,6 +18,11 @@
                                 Dashboard
                             </jet-nav-link>
                         </div>
+                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                            <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
+                                Dashboard
+                            </jet-nav-link>
+                        </div>
                     </div>
 
                     <!-- Settings Dropdown -->
@@ -73,7 +78,7 @@
                                         </jet-dropdown-link>
 
                                         <div class="border-t border-gray-100"></div>
-                                        
+
 
                                         <!-- Team Switcher -->
                                         <div class="block px-4 py-2 text-xs text-gray-400">
