@@ -4801,6 +4801,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -28686,7 +28688,7 @@ var render = function() {
   return _c(
     "div",
     [
-      _vm.userPermissions.canAddTeamMembers
+      _vm.$page.user.all_teams[1].membership.role === "admin"
         ? _c(
             "div",
             [
