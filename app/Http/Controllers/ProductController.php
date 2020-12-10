@@ -50,12 +50,8 @@ class ProductController extends Controller
      * @param $product
      * @return Response
      */
-    public function show($product)
+    public function show(Product $product)
     {
-        // $product doesnt work as $id
-
-        // get product by id
-        $product = Product::find($product);
 
         // show the view and pass the product to it
         return View::make('products.show')
@@ -66,7 +62,7 @@ class ProductController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param Product $product
-     * @return Response
+     * @return void
      */
     public function edit(Product $product)
     {
@@ -95,6 +91,7 @@ class ProductController extends Controller
     {
         //
     }
+
     public function getAddToCart(Request $request,$id){
         //add item to cart by ID
         $product = product::find($id);
