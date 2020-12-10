@@ -10,7 +10,7 @@
 
         <template #form>
             <!-- Profile Photo -->
-            <div>{{ $page.jetstream }}</div>
+            <!-- <div>{{ $page.jetstream }}</div> -->
             <div class="col-span-6 sm:col-span-4">
                 <!-- Profile Photo File Input -->
                 <input type="file" class="hidden"
@@ -54,6 +54,34 @@
                 <jet-label for="email" value="Email" />
                 <jet-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" />
                 <jet-input-error :message="form.error('email')" class="mt-2" />
+            </div>
+
+            <!-- Tel -->
+            <div class="col-span-6 sm:col-span-4">
+                <jet-label for="tel" value="Tel" />
+                <jet-input id="tel" type="tel" class="mt-1 block w-full" v-model="form.tel" />
+                <jet-input-error :message="form.error('tel')" class="mt-2" />
+            </div>
+
+            <!-- zip -->
+            <div class="col-span-6 sm:col-span-4">
+                <jet-label for="zip" value="Zip" />
+                <jet-input id="zip" type="zip" class="mt-1 block w-full" v-model="form.zip" />
+                <jet-input-error :message="form.error('zip')" class="mt-2" />
+            </div>
+
+            <!-- Street -->
+            <div class="col-span-6 sm:col-span-4">
+                <jet-label for="street" value="Street" />
+                <jet-input id="street" type="street" class="mt-1 block w-full" v-model="form.street" />
+                <jet-input-error :message="form.error('street')" class="mt-2" />
+            </div>
+
+            <!-- City -->
+            <div class="col-span-6 sm:col-span-4">
+                <jet-label for="city" value="City" />
+                <jet-input id="city" type="city" class="mt-1 block w-full" v-model="form.city" />
+                <jet-input-error :message="form.error('city')" class="mt-2" />
             </div>
         </template>
 
