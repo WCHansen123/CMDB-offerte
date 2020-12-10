@@ -52,7 +52,6 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        // $product doesnt work as $id
 
         // show the view and pass the product to it
         return View::make('products.show')
