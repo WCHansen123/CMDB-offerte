@@ -50,17 +50,12 @@ class ProductController extends Controller
      * @param $product
      * @return Response
      */
-<<<<<<< HEAD
-    public function show(Product $product)
-    {
-=======
     public function show($product)
     {
         // $product doesnt work as $id
 
         // get product by id
         $product = Product::find($product);
->>>>>>> dev
 
         // show the view and pass the product to it
         return View::make('products.show')
