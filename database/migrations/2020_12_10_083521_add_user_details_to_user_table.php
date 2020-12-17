@@ -13,7 +13,7 @@ class AddUserDetailsToUserTable extends Migration
      */
     public function up()
     {
-        Schema::table('user', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             $table->string('tel')->nullable();
             $table->string('zip')->nullable();
             $table->string('street')->nullable();

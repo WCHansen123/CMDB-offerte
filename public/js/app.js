@@ -3085,14 +3085,49 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-<<<<<<< HEAD
 //
 //
 //
 //
 //
-=======
->>>>>>> dev
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -4243,8 +4278,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-<<<<<<< HEAD
-=======
 //
 //
 //
@@ -4273,7 +4306,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
->>>>>>> dev
 
 
 
@@ -4298,6 +4330,10 @@ __webpack_require__.r(__webpack_exports__);
         '_method': 'PUT',
         name: this.user.name,
         email: this.user.email,
+        tel: this.user.tel,
+        zip: this.user.zip,
+        street: this.user.street,
+        city: this.user.city,
         photo: null
       }, {
         bag: 'updateProfileInformation',
@@ -28204,11 +28240,6 @@ var render = function() {
         key: "form",
         fn: function() {
           return [
-<<<<<<< HEAD
-            _c("div", [_vm._v(_vm._s(_vm.$page.jetstream))]),
-            _vm._v(" "),
-=======
->>>>>>> dev
             _c(
               "div",
               { staticClass: "col-span-6 sm:col-span-4" },
@@ -28370,7 +28401,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("jet-input", {
                   staticClass: "mt-1 block w-full",
-                  attrs: { id: "tel", type: "tel" },
+                  attrs: { id: "tel", type: "text" },
                   model: {
                     value: _vm.form.tel,
                     callback: function($$v) {
@@ -28396,7 +28427,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("jet-input", {
                   staticClass: "mt-1 block w-full",
-                  attrs: { id: "zip", type: "zip" },
+                  attrs: { id: "zip", type: "text" },
                   model: {
                     value: _vm.form.zip,
                     callback: function($$v) {
@@ -28422,7 +28453,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("jet-input", {
                   staticClass: "mt-1 block w-full",
-                  attrs: { id: "street", type: "street" },
+                  attrs: { id: "street", type: "text" },
                   model: {
                     value: _vm.form.street,
                     callback: function($$v) {
@@ -28448,7 +28479,7 @@ var render = function() {
                 _vm._v(" "),
                 _c("jet-input", {
                   staticClass: "mt-1 block w-full",
-                  attrs: { id: "city", type: "city" },
+                  attrs: { id: "city", type: "text" },
                   model: {
                     value: _vm.form.city,
                     callback: function($$v) {
@@ -44781,8 +44812,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Huiswerk\Projecten\J3B1\CMDB-offerte\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\Huiswerk\Projecten\J3B1\CMDB-offerte\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\xampp\htdocs\jaar3\EpicIT\Theusprome\CMDB-offerte\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\jaar3\EpicIT\Theusprome\CMDB-offerte\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })
