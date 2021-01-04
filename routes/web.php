@@ -4,6 +4,7 @@ use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,12 @@ Route::resource('products', ProductController::class);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
+
+// order routes //
+Route::middleware(['auth:sanctum', 'verified'])->get('/account/orders', function () {
+    return Inertia\Inertia::render('Orders');
+})->name('orders');
+
 
 Route::get('/logout', function () {
     Auth::logout();
