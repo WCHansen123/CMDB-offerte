@@ -3090,6 +3090,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -4240,6 +4278,34 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -4264,6 +4330,10 @@ __webpack_require__.r(__webpack_exports__);
         '_method': 'PUT',
         name: this.user.name,
         email: this.user.email,
+        tel: this.user.tel,
+        zip: this.user.zip,
+        street: this.user.street,
+        city: this.user.city,
         photo: null
       }, {
         bag: 'updateProfileInformation',
@@ -28323,6 +28393,110 @@ var render = function() {
                 })
               ],
               1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-span-6 sm:col-span-4" },
+              [
+                _c("jet-label", { attrs: { for: "tel", value: "Tel" } }),
+                _vm._v(" "),
+                _c("jet-input", {
+                  staticClass: "mt-1 block w-full",
+                  attrs: { id: "tel", type: "text" },
+                  model: {
+                    value: _vm.form.tel,
+                    callback: function($$v) {
+                      _vm.$set(_vm.form, "tel", $$v)
+                    },
+                    expression: "form.tel"
+                  }
+                }),
+                _vm._v(" "),
+                _c("jet-input-error", {
+                  staticClass: "mt-2",
+                  attrs: { message: _vm.form.error("tel") }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-span-6 sm:col-span-4" },
+              [
+                _c("jet-label", { attrs: { for: "zip", value: "Zip" } }),
+                _vm._v(" "),
+                _c("jet-input", {
+                  staticClass: "mt-1 block w-full",
+                  attrs: { id: "zip", type: "text" },
+                  model: {
+                    value: _vm.form.zip,
+                    callback: function($$v) {
+                      _vm.$set(_vm.form, "zip", $$v)
+                    },
+                    expression: "form.zip"
+                  }
+                }),
+                _vm._v(" "),
+                _c("jet-input-error", {
+                  staticClass: "mt-2",
+                  attrs: { message: _vm.form.error("zip") }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-span-6 sm:col-span-4" },
+              [
+                _c("jet-label", { attrs: { for: "street", value: "Street" } }),
+                _vm._v(" "),
+                _c("jet-input", {
+                  staticClass: "mt-1 block w-full",
+                  attrs: { id: "street", type: "text" },
+                  model: {
+                    value: _vm.form.street,
+                    callback: function($$v) {
+                      _vm.$set(_vm.form, "street", $$v)
+                    },
+                    expression: "form.street"
+                  }
+                }),
+                _vm._v(" "),
+                _c("jet-input-error", {
+                  staticClass: "mt-2",
+                  attrs: { message: _vm.form.error("street") }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-span-6 sm:col-span-4" },
+              [
+                _c("jet-label", { attrs: { for: "city", value: "City" } }),
+                _vm._v(" "),
+                _c("jet-input", {
+                  staticClass: "mt-1 block w-full",
+                  attrs: { id: "city", type: "text" },
+                  model: {
+                    value: _vm.form.city,
+                    callback: function($$v) {
+                      _vm.$set(_vm.form, "city", $$v)
+                    },
+                    expression: "form.city"
+                  }
+                }),
+                _vm._v(" "),
+                _c("jet-input-error", {
+                  staticClass: "mt-2",
+                  attrs: { message: _vm.form.error("city") }
+                })
+              ],
+              1
             )
           ]
         },
@@ -44640,8 +44814,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Huiswerk\Projecten\J3B1\CMDB-offerte\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\Huiswerk\Projecten\J3B1\CMDB-offerte\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\xampp\htdocs\jaar3\EpicIT\Theusprome\CMDB-offerte\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\jaar3\EpicIT\Theusprome\CMDB-offerte\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })
