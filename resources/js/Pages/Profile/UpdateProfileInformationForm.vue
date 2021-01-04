@@ -10,7 +10,7 @@
 
         <template #form>
             <!-- Profile Photo -->
-            <!-- <div>{{ $page.jetstream }}</div> -->
+            <div>{{ $page.jetstream }}</div>
             <div class="col-span-6 sm:col-span-4">
                 <!-- Profile Photo File Input -->
                 <input type="file" class="hidden"

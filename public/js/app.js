@@ -28240,6 +28240,8 @@ var render = function() {
         key: "form",
         fn: function() {
           return [
+            _c("div", [_vm._v(_vm._s(_vm.$page.jetstream))]),
+            _vm._v(" "),
             _c(
               "div",
               { staticClass: "col-span-6 sm:col-span-4" },
