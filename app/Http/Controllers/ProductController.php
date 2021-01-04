@@ -66,7 +66,7 @@ class ProductController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param Product $product
-     * @return Response
+     * @return void
      */
     public function edit(Product $product)
     {
@@ -95,6 +95,7 @@ class ProductController extends Controller
     {
         //
     }
+
     public function getAddToCart(Request $request,$id){
         //add item to cart by ID
         $product = product::find($id);
