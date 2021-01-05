@@ -3054,6 +3054,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -4204,6 +4242,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -4228,6 +4293,10 @@ __webpack_require__.r(__webpack_exports__);
         '_method': 'PUT',
         name: this.user.name,
         email: this.user.email,
+        tel: this.user.tel,
+        zip: this.user.zip,
+        street: this.user.street,
+        city: this.user.city,
         photo: null
       }, {
         bag: 'updateProfileInformation',
@@ -25625,7 +25694,10 @@ var render = function() {
                                     ],
                                     2
                                   )
-                                : _c(
+                                : _vm._e(),
+                              _vm._v(" "),
+                              _vm.$page.user.all_teams[1].id === 2
+                                ? _c(
                                     "div",
                                     [
                                       _vm.$page.jetstream.hasTeamFeatures
@@ -25794,7 +25866,181 @@ var render = function() {
                                         : _vm._e()
                                     ],
                                     2
-                                  ),
+                                  )
+                                : _vm._e(),
+                              _vm._v(" "),
+                              _vm.$page.user.all_teams[1].id === 2
+                                ? _c(
+                                    "div",
+                                    [
+                                      _vm.$page.jetstream.hasTeamFeatures
+                                        ? [
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass:
+                                                  "block px-4 py-2 text-xs text-gray-400"
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                        Manage Team\n                                    "
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "jet-dropdown-link",
+                                              {
+                                                attrs: {
+                                                  href: _vm.route(
+                                                    "teams.show",
+                                                    _vm.$page.user.current_team
+                                                  )
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                        Team Settings\n                                    "
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _vm.$page.jetstream.canCreateTeams
+                                              ? _c(
+                                                  "jet-dropdown-link",
+                                                  {
+                                                    attrs: {
+                                                      href: _vm.route(
+                                                        "teams.create"
+                                                      )
+                                                    }
+                                                  },
+                                                  [
+                                                    _vm._v(
+                                                      "\n                                        Create New Team\n                                    "
+                                                    )
+                                                  ]
+                                                )
+                                              : _vm._e(),
+                                            _vm._v(" "),
+                                            _c("div", {
+                                              staticClass:
+                                                "border-t border-gray-100"
+                                            }),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass:
+                                                  "block px-4 py-2 text-xs text-gray-400"
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                        Switch Teams\n                                    "
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _vm._l(
+                                              _vm.$page.user.all_teams,
+                                              function(team) {
+                                                return [
+                                                  _c(
+                                                    "form",
+                                                    {
+                                                      key: team.id,
+                                                      on: {
+                                                        submit: function(
+                                                          $event
+                                                        ) {
+                                                          $event.preventDefault()
+                                                          return _vm.switchToTeam(
+                                                            team
+                                                          )
+                                                        }
+                                                      }
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "jet-dropdown-link",
+                                                        {
+                                                          attrs: {
+                                                            as: "button"
+                                                          }
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "div",
+                                                            {
+                                                              staticClass:
+                                                                "flex items-center"
+                                                            },
+                                                            [
+                                                              team.id ==
+                                                              _vm.$page.user
+                                                                .current_team_id
+                                                                ? _c(
+                                                                    "svg",
+                                                                    {
+                                                                      staticClass:
+                                                                        "mr-2 h-5 w-5 text-green-400",
+                                                                      attrs: {
+                                                                        fill:
+                                                                          "none",
+                                                                        "stroke-linecap":
+                                                                          "round",
+                                                                        "stroke-linejoin":
+                                                                          "round",
+                                                                        "stroke-width":
+                                                                          "2",
+                                                                        stroke:
+                                                                          "currentColor",
+                                                                        viewBox:
+                                                                          "0 0 24 24"
+                                                                      }
+                                                                    },
+                                                                    [
+                                                                      _c(
+                                                                        "path",
+                                                                        {
+                                                                          attrs: {
+                                                                            d:
+                                                                              "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                                                                          }
+                                                                        }
+                                                                      )
+                                                                    ]
+                                                                  )
+                                                                : _vm._e(),
+                                                              _vm._v(" "),
+                                                              _c("div", [
+                                                                _vm._v(
+                                                                  _vm._s(
+                                                                    team.name
+                                                                  )
+                                                                )
+                                                              ])
+                                                            ]
+                                                          )
+                                                        ]
+                                                      )
+                                                    ],
+                                                    1
+                                                  )
+                                                ]
+                                              }
+                                            ),
+                                            _vm._v(" "),
+                                            _c("div", {
+                                              staticClass:
+                                                "border-t border-gray-100"
+                                            })
+                                          ]
+                                        : _vm._e()
+                                    ],
+                                    2
+                                  )
+                                : _vm._e(),
                               _vm._v(" "),
                               _c(
                                 "form",
@@ -28011,8 +28257,6 @@ var render = function() {
         key: "form",
         fn: function() {
           return [
-            _c("div", [_vm._v(_vm._s(_vm.$page.jetstream))]),
-            _vm._v(" "),
             _c(
               "div",
               { staticClass: "col-span-6 sm:col-span-4" },
@@ -28161,6 +28405,110 @@ var render = function() {
                 _c("jet-input-error", {
                   staticClass: "mt-2",
                   attrs: { message: _vm.form.error("email") }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-span-6 sm:col-span-4" },
+              [
+                _c("jet-label", { attrs: { for: "tel", value: "Tel" } }),
+                _vm._v(" "),
+                _c("jet-input", {
+                  staticClass: "mt-1 block w-full",
+                  attrs: { id: "tel", type: "text" },
+                  model: {
+                    value: _vm.form.tel,
+                    callback: function($$v) {
+                      _vm.$set(_vm.form, "tel", $$v)
+                    },
+                    expression: "form.tel"
+                  }
+                }),
+                _vm._v(" "),
+                _c("jet-input-error", {
+                  staticClass: "mt-2",
+                  attrs: { message: _vm.form.error("tel") }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-span-6 sm:col-span-4" },
+              [
+                _c("jet-label", { attrs: { for: "zip", value: "Zip" } }),
+                _vm._v(" "),
+                _c("jet-input", {
+                  staticClass: "mt-1 block w-full",
+                  attrs: { id: "zip", type: "text" },
+                  model: {
+                    value: _vm.form.zip,
+                    callback: function($$v) {
+                      _vm.$set(_vm.form, "zip", $$v)
+                    },
+                    expression: "form.zip"
+                  }
+                }),
+                _vm._v(" "),
+                _c("jet-input-error", {
+                  staticClass: "mt-2",
+                  attrs: { message: _vm.form.error("zip") }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-span-6 sm:col-span-4" },
+              [
+                _c("jet-label", { attrs: { for: "street", value: "Street" } }),
+                _vm._v(" "),
+                _c("jet-input", {
+                  staticClass: "mt-1 block w-full",
+                  attrs: { id: "street", type: "text" },
+                  model: {
+                    value: _vm.form.street,
+                    callback: function($$v) {
+                      _vm.$set(_vm.form, "street", $$v)
+                    },
+                    expression: "form.street"
+                  }
+                }),
+                _vm._v(" "),
+                _c("jet-input-error", {
+                  staticClass: "mt-2",
+                  attrs: { message: _vm.form.error("street") }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-span-6 sm:col-span-4" },
+              [
+                _c("jet-label", { attrs: { for: "city", value: "City" } }),
+                _vm._v(" "),
+                _c("jet-input", {
+                  staticClass: "mt-1 block w-full",
+                  attrs: { id: "city", type: "text" },
+                  model: {
+                    value: _vm.form.city,
+                    callback: function($$v) {
+                      _vm.$set(_vm.form, "city", $$v)
+                    },
+                    expression: "form.city"
+                  }
+                }),
+                _vm._v(" "),
+                _c("jet-input-error", {
+                  staticClass: "mt-2",
+                  attrs: { message: _vm.form.error("city") }
                 })
               ],
               1
@@ -44481,10 +44829,5 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\Xampp\htdocs\Sites\CMDB-offerte\resources\js\app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! E:\Xampp\htdocs\Sites\CMDB-offerte\resources\css\app.css */"./resources/css/app.css");
 
-
-/***/ })
-
-/******/ });
