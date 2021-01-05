@@ -99,10 +99,8 @@ class ProductController extends Controller
         $cart = new cart($oldCart);
         $cart->add($product, $product->id);
         $request->session()->put('cart',$cart);
-        // dd($request->session()->get('cart'));
-        return redirect()->route('products.index');
+        return redirect()->back();
     }
-
     public function getCart(){
         // get cart with added products
         if(!Session::has('cart')){
