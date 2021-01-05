@@ -13,49 +13,96 @@
             </div>
         </div>
     </div>
-    <div class="aboutus-area">
-    <div class="container">
-        <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">    
-                <div class="aboutus-image float-right hidden-sm"><img src="http://bestjquery.com/tutorial/hover-effect/demo206/images/img-2.jpg" alt=""></div>
-                </div> 
-            <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="aboutus-content ">
-                    <h2><p><span>WELCOME TO ABEDESIGNS</span></p>
-                      I'M The Best <span>Web Developer</span></h2>
-                    
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                    
-                    <div class="counter ">
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">  
-                        <div class="single-counter text-center">
-                            <h2 class="counter"><span>15</span></h2>
-                            <p>YEARS OF EXPERIENCED</p>
-                        </div>
-                        
-                        <div class="single-counter text-center">
-                            <h2 class="counter"><span>100</span></h2>
-                            <p>WEBSITES COMPLETED</p>
-                        </div>
-                        
-                        <div class="single-counter text-center">
-                            <h2 class="counter"><span>5</span></h2>
-                            <p>AWARDS WON</p>
-                        </div>
-                        
-                        <div class="single-counter text-center">
-                            <h2 class="counter"><span>10</span></h2>
-                            <p>CLIENTS</p>
-                        </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>   
-            
 
-        </div>
+    <!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+<!-- Project Section -->
+<div class="w3-container w3-padding-32" id="projects">
+<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Products</h3>
+</div>
+
+<div class="w3-row-padding">
+<div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+    <img src="{{asset('img/product_frame.png')}}" alt="House" style="width:100%">
     </div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+    <img src="{{asset('img/product_frame.png')}}" alt="House" style="width:100%">
+    </div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+    <img src="{{asset('img/product_frame.png')}}" alt="House" style="width:100%">
+    </div>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+    <img src="{{asset('img/product_frame.png')}}" alt="House" style="width:100%">
+    </div>
+</div>
+</div>
+
+
+
+<!-- About Section -->
+<div class="w3-container w3-padding-32" id="about">
+<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    laboris nisi ut aliquip ex ea commodo consequat.
+</p>
+</div>
+
+<div class="w3-row-padding w3-grayscale">
+<div class="w3-col l3 m6 w3-margin-bottom">
+    <img src="{{asset('img/pp1.jpg')}}" alt="John" style="width:100%">
+    <h3>John Doe</h3>
+    <p class="w3-opacity">CEO & Founder</p>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+    <img src="{{asset('img/pp2.jpg')}}" alt="Jane" style="width:100%">
+    <h3>Jane Doe</h3>
+    <p class="w3-opacity">Architect</p>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+    <img src="{{asset('img/pp3.jpg')}}" alt="Mike" style="width:100%">
+    <h3>Mike Ross</h3>
+    <p class="w3-opacity">Architect</p>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+</div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-padding-32" id="contact">
+<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+<p>Lets get in touch and talk about your next project.</p>
+<form action="/action_page.php" target="_blank">
+    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+    <button class="w3-button w3-black w3-section" type="submit">
+    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+    </button>
+</form>
+</div>
+<!-- Image of location/map -->
+<div class="w3-container">
+<img src="{{asset('img/map.jpg')}}" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
 </div>
 @endsection
