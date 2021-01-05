@@ -100,7 +100,7 @@
                                     </template>
                                     </div>
 
-                                    <div v-if="$page.user.all_teams[1].id === 2">
+                                    <div v-else="$page.user.all_teams[1].id === 2">
                                         <template v-if="$page.jetstream.hasTeamFeatures">
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             Manage Team
@@ -138,7 +138,7 @@
                                     </template>
                                     </div>
 
-                                    <div v-if="$page.user.all_teams[1].id === 2">
+                                    <div v-else="$page.user.all_teams[1].id === 2">
                                         <template v-if="$page.jetstream.hasTeamFeatures">
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             Manage Team
