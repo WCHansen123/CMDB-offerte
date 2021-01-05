@@ -3128,6 +3128,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -25515,6 +25520,28 @@ var render = function() {
                   )
                 ],
                 1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "hidden space-x-8 sm:-my-px sm:ml-10 sm:flex" },
+                [
+                  _c(
+                    "a",
+                    {
+                      staticStyle: { padding: "22px 0px" },
+                      attrs: {
+                        href: _vm.route("home"),
+                        active: _vm.route().current("home")
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n                            Home\n                        "
+                      )
+                    ]
+                  )
+                ]
               ),
               _vm._v(" "),
               _c(
