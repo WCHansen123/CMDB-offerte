@@ -42,17 +42,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('products.index')}}">Products</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
             </ul>
             <li class="nav-item form-inline"><a class="nav-link navbar-login" href="{{route('shoppingCart')}}">Shoppingcart</a>
             <span class="badge badge-pill badge-warning">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}}</span>                     

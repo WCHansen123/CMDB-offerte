@@ -15,8 +15,10 @@ class PageController extends Controller
      * @return Factory|\Illuminate\Contracts\View\View
      */
     public function index()
-    {
-        return View('home');
+    {   
+        $pages = page::all();
+        return view('home', compact('pages'));
+        // return View('home')->with('page', $pages);
     }
 
     /**
