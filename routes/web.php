@@ -42,3 +42,13 @@ Route::get('/shoping-cart', [ProductController::class, 'getCart'])->name('shoppi
 Route::get('/reduce/{id}', [ProductController::class, 'getReduceByOne'])->name('reduce');
 Route::get('/remove/{id}', [ProductController::class, 'getRemoveItem'])->name('remove');
 Route::get('/shopping-cart', function(){return view('shopping-cart');})->name('shopping-cart');
+
+Route::get('/send-mail', function () {   
+    $mailDetails = [
+        'Name' => $_GET['Name'],
+        'Email' => $_GET['Email'],
+        'Subject' => $_GET['Subject'],
+        'Comment' => $_GET['Comment']
+    ];
+    Mail::to('68d4e26934-204aa0@inbox.mailtrap.io')->send(new \App\Mail\NewUserNotification($mailDetails));
+});
