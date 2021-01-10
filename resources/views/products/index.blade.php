@@ -6,7 +6,7 @@
         <div class="row d-flex justify-content-center g-1">
         @foreach($products as $product)
             <div class="col-md-4">
-                <div class="product text-center"> <img src="/img/{{$product->thumbnail}}" width="250">
+                <div class="product text-center"> <img src="{{asset('img/product_frame.png')}}" width="250">
                     <div class="about text-left px-3">
                         <h4><a href="{{route('products.show', ['product' => $product])}}">{{$product->name}}</a></h4> <span class="text-muted">{{$product->description}}</span>
                         <h3>€{{$product->price}}</h3>

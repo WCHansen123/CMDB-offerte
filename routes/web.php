@@ -16,10 +16,13 @@ use App\Http\Controllers\OrderController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', [PageController::class, 'index'])->name('home');
-
+Route::get('/page/index', [PageController::class, 'indexPage'])->name('page.index');
 Route::resource('products', ProductController::class);
+Route::get('/page/edit/{id}', [PageController::class, 'edit'])->name('page.edit');
+Route::post('/update/{id}', [PageController::class, 'update'])->name('update');
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
@@ -43,14 +46,12 @@ Route::get('/reduce/{id}', [ProductController::class, 'getReduceByOne'])->name('
 Route::get('/remove/{id}', [ProductController::class, 'getRemoveItem'])->name('remove');
 Route::get('/shopping-cart', function(){return view('shopping-cart');})->name('shopping-cart');
 
-Route::get('/send-mail', function () {
-   
+Route::get('/send-mail', function () {   
     $mailDetails = [
         'Name' => $_GET['Name'],
         'Email' => $_GET['Email'],
         'Subject' => $_GET['Subject'],
         'Comment' => $_GET['Comment']
     ];
-   
     Mail::to('68d4e26934-204aa0@inbox.mailtrap.io')->send(new \App\Mail\NewUserNotification($mailDetails));
 });
