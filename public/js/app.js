@@ -2773,6 +2773,66 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -25139,7 +25199,7 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "mt-6 text-gray-500" }, [
           _vm._v(
-            "\n            Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed\n            to help you build your application using a development environment that is simple, powerful, and enjoyable. We believe\n            you should love expressing your creativity through programming, so we have spent time carefully crafting the Laravel\n            ecosystem to be a breath of fresh air. We hope you love it.\n        "
+            "\n            Laravel Jetstream provides a beautiful, robust starting point\n            for your next Laravel application. Laravel is designed to help\n            you build your application using a development environment that\n            is simple, powerful, and enjoyable. We believe you should love\n            expressing your creativity through programming, so we have spent\n            time carefully crafting the Laravel ecosystem to be a breath of\n            fresh air. We hope you love it.\n        "
           )
         ])
       ]
@@ -25182,18 +25242,18 @@ var render = function() {
                 staticClass:
                   "ml-4 text-lg text-gray-600 leading-7 font-semibold"
               },
-              [_vm._v("Page Content")]
+              [_vm._v("\n                    Page Content\n                ")]
             )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "ml-12" }, [
             _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
               _vm._v(
-                "\n                    You can change page content in this section. \n                "
+                "\n                    You can change page content in this section.\n                "
               )
             ]),
             _vm._v(" "),
-            _c("a", { attrs: { href: "https://laravel.com/docs" } }, [
+            _c("a", { attrs: { href: _vm.route("page.index") } }, [
               _c(
                 "div",
                 {
@@ -25201,7 +25261,7 @@ var render = function() {
                     "mt-3 flex items-center text-sm font-semibold text-indigo-700"
                 },
                 [
-                  _c("div", [_vm._v("Explore the documentation")]),
+                  _c("div", [_vm._v("Edit Home page")]),
                   _vm._v(" "),
                   _c("div", { staticClass: "ml-1 text-indigo-500" }, [
                     _c(
@@ -25265,14 +25325,14 @@ var render = function() {
                   staticClass:
                     "ml-4 text-lg text-gray-600 leading-7 font-semibold"
                 },
-                [_vm._v("Products")]
+                [_vm._v("\n                    Products\n                ")]
               )
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "ml-12" }, [
               _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
                 _vm._v(
-                  "\n                    edite and insert poroducts this is feature for the future.\n                "
+                  "\n                    edite and insert poroducts this is feature for the\n                    future.\n                "
                 )
               ]),
               _vm._v(" "),
@@ -25284,7 +25344,7 @@ var render = function() {
                       "mt-3 flex items-center text-sm font-semibold text-indigo-700"
                   },
                   [
-                    _c("div", [_vm._v(" simply dummy text")]),
+                    _c("div", [_vm._v("simply dummy text")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "ml-1 text-indigo-500" }, [
                       _c(
@@ -44618,6 +44678,24 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.mixin({
   methods: {
+    route: function (_route) {
+      function route(_x, _x2, _x3) {
+        return _route.apply(this, arguments);
+      }
+
+      route.toString = function () {
+        return _route.toString();
+      };
+
+      return route;
+    }(function (name, params, absolute) {
+      var config = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : Ziggy;
+      return route(name, params, absolute, config);
+    })
+  }
+});
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.mixin({
+  methods: {
     route: route
   }
 });
@@ -44679,10 +44757,10 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-  __webpack_require__(/*! C:\xampp\htdocs\jaar3\EpicIT\Theusprome\CMDB-offerte\resources\js\app.js */"./resources/js/app.js");
-  module.exports = __webpack_require__(/*! C:\xampp\htdocs\jaar3\EpicIT\Theusprome\CMDB-offerte\resources\css\app.css */"./resources/css/app.css");
-  
-  
-  /***/ })
-  
-  /******/ });
+__webpack_require__(/*! E:\Xampp\htdocs\Sites\CMDB-offerte\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\Xampp\htdocs\Sites\CMDB-offerte\resources\css\app.css */"./resources/css/app.css");
+
+
+/***/ })
+
+/******/ });

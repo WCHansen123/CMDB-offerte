@@ -16,10 +16,13 @@ use App\Http\Controllers\OrderController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', [PageController::class, 'index'])->name('home');
-
+Route::get('/page/index', [PageController::class, 'indexPage'])->name('page.index');
 Route::resource('products', ProductController::class);
+Route::get('/page/edit/{id}', [PageController::class, 'edit'])->name('page.edit');
+Route::post('/update/{id}', [PageController::class, 'update'])->name('update');
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia\Inertia::render('Dashboard');
