@@ -17,7 +17,7 @@
                 fresh air. We hope you love it.
             </div>
         </div>
-        <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2" v-if="$page.user.role == 'admin'">
             <div class="p-6">
                 <div class="flex items-center">
                     <svg
@@ -27,15 +27,13 @@
                         stroke-linejoin="round"
                         stroke-width="2"
                         viewBox="0 0 24 24"
-                        class="w-8 h-8 text-gray-400"
-                    >
+                        class="w-8 h-8 text-gray-400">
                         <path
                             d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                         ></path>
                     </svg>
                     <div
-                        class="ml-4 text-lg text-gray-600 leading-7 font-semibold"
-                    >
+                        class="ml-4 text-lg text-gray-600 leading-7 font-semibold">
                         Page Content
                     </div>
                 </div>
@@ -45,8 +43,7 @@
                     </div>
                     <a :href="route('page.index')">
                         <div
-                            class="mt-3 flex items-center text-sm font-semibold text-indigo-700"
-                        >
+                            class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
                             <div>Edit Home page</div>
                             <div class="ml-1 text-indigo-500">
                                 <svg
