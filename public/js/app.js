@@ -4274,6 +4274,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -25550,7 +25551,7 @@ var render = function() {
                                 staticClass: "border-t border-gray-100"
                               }),
                               _vm._v(" "),
-                              _vm.$page.user.role === "admin"
+                              _vm.$page.user.name === "admin"
                                 ? _c(
                                     "div",
                                     [
@@ -28088,7 +28089,7 @@ var render = function() {
       {
         key: "title",
         fn: function() {
-          return [_vm._v("\n        Profile Information\n    ")]
+          return [_vm._v("\n        Profile Information\n        ")]
         },
         proxy: true
       },
