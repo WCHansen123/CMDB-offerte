@@ -17,6 +17,7 @@
                         <span class="label label-success">Prijs:€{{$product['price']}}</span>
                         <button class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
                         <ul class="dropdown-menu">
+                        <li><a href="{{ route('increase', ['id' => $product['item']['id']]) }}">+1</a></li>
                         <li><a href="{{ route('reduce', ['id' => $product['item']['id']]) }}">-1</a></li>
                         <li><a href="{{ route('remove', ['id' => $product['item']['id']]) }}"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
                         </ul>
