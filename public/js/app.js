@@ -2809,6 +2809,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -25167,13 +25191,15 @@ var render = function() {
         _vm._v(" "),
         _c("div", { staticClass: "mt-8 text-2xl" }, [
           _vm._v(
-            "\n            Welcome to your Jetstream application!\n        "
+            "\n            Welcome to your Dashboard " +
+              _vm._s(_vm.$page.user.name) +
+              "\n        "
           )
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "mt-6 text-gray-500" }, [
           _vm._v(
-            "\n            Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed\n            to help you build your application using a development environment that is simple, powerful, and enjoyable. We believe\n            you should love expressing your creativity through programming, so we have spent time carefully crafting the Laravel\n            ecosystem to be a breath of fresh air. We hope you love it.\n        "
+            "\n            Laravel Jetstream provides a beautiful, robust starting point\n            for your next Laravel application. Laravel is designed to help\n            you build your application using a development environment that\n            is simple, powerful, and enjoyable. We believe you should love\n            expressing your creativity through programming, so we have spent\n            time carefully crafting the Laravel ecosystem to be a breath of\n            fresh air. We hope you love it.\n        "
           )
         ])
       ]
@@ -25210,17 +25236,24 @@ var render = function() {
               ]
             ),
             _vm._v(" "),
-            _vm._m(0)
+            _c(
+              "div",
+              {
+                staticClass:
+                  "ml-4 text-lg text-gray-600 leading-7 font-semibold"
+              },
+              [_vm._v("\n                    Page Content\n                ")]
+            )
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "ml-12" }, [
             _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
               _vm._v(
-                "\n                    Laravel has wonderful documentation covering every aspect of the framework. Whether you're new to the framework or have previous experience, we recommend reading all of the documentation from beginning to end.\n                "
+                "\n                    You can change page content in this section.\n                "
               )
             ]),
             _vm._v(" "),
-            _c("a", { attrs: { href: "https://laravel.com/docs" } }, [
+            _c("a", { attrs: { href: _vm.route("page.index") } }, [
               _c(
                 "div",
                 {
@@ -25228,7 +25261,7 @@ var render = function() {
                     "mt-3 flex items-center text-sm font-semibold text-indigo-700"
                 },
                 [
-                  _c("div", [_vm._v("Explore the documentation")]),
+                  _c("div", [_vm._v("Edit Home page")]),
                   _vm._v(" "),
                   _c("div", { staticClass: "ml-1 text-indigo-500" }, [
                     _c(
@@ -25280,26 +25313,30 @@ var render = function() {
                   _c("path", {
                     attrs: {
                       d:
-                        "M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+                        "M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
                     }
-                  }),
-                  _c("path", {
-                    attrs: { d: "M15 13a3 3 0 11-6 0 3 3 0 016 0z" }
                   })
                 ]
               ),
               _vm._v(" "),
-              _vm._m(1)
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "ml-4 text-lg text-gray-600 leading-7 font-semibold"
+                },
+                [_vm._v("\n                    Products\n                ")]
+              )
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "ml-12" }, [
               _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
                 _vm._v(
-                  "\n                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.\n                "
+                  "\n                    edite and insert poroducts this is feature for the\n                    future.\n                "
                 )
               ]),
               _vm._v(" "),
-              _c("a", { attrs: { href: "https://laracasts.com" } }, [
+              _c("a", { attrs: { href: "#" } }, [
                 _c(
                   "div",
                   {
@@ -25307,7 +25344,7 @@ var render = function() {
                       "mt-3 flex items-center text-sm font-semibold text-indigo-700"
                   },
                   [
-                    _c("div", [_vm._v("Start watching Laracasts")]),
+                    _c("div", [_vm._v("simply dummy text")]),
                     _vm._v(" "),
                     _c("div", { staticClass: "ml-1 text-indigo-500" }, [
                       _c(
@@ -25333,148 +25370,12 @@ var render = function() {
               ])
             ])
           ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "p-6 border-t border-gray-200" }, [
-          _c("div", { staticClass: "flex items-center" }, [
-            _c(
-              "svg",
-              {
-                staticClass: "w-8 h-8 text-gray-400",
-                attrs: {
-                  fill: "none",
-                  stroke: "currentColor",
-                  "stroke-linecap": "round",
-                  "stroke-linejoin": "round",
-                  "stroke-width": "2",
-                  viewBox: "0 0 24 24"
-                }
-              },
-              [
-                _c("path", {
-                  attrs: {
-                    d:
-                      "M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _vm._m(2)
-          ]),
-          _vm._v(" "),
-          _vm._m(3)
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "p-6 border-t border-gray-200 md:border-l" }, [
-          _c("div", { staticClass: "flex items-center" }, [
-            _c(
-              "svg",
-              {
-                staticClass: "w-8 h-8 text-gray-400",
-                attrs: {
-                  fill: "none",
-                  stroke: "currentColor",
-                  "stroke-linecap": "round",
-                  "stroke-linejoin": "round",
-                  "stroke-width": "2",
-                  viewBox: "0 0 24 24"
-                }
-              },
-              [
-                _c("path", {
-                  attrs: {
-                    d:
-                      "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                  }
-                })
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "ml-4 text-lg text-gray-600 leading-7 font-semibold"
-              },
-              [_vm._v("Authentication")]
-            )
-          ]),
-          _vm._v(" "),
-          _vm._m(4)
-        ])
+        )
       ]
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "ml-4 text-lg text-gray-600 leading-7 font-semibold" },
-      [
-        _c("a", { attrs: { href: "https://laravel.com/docs" } }, [
-          _vm._v("Documentation")
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "ml-4 text-lg text-gray-600 leading-7 font-semibold" },
-      [
-        _c("a", { attrs: { href: "https://laracasts.com" } }, [
-          _vm._v("Laracasts")
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "ml-4 text-lg text-gray-600 leading-7 font-semibold" },
-      [
-        _c("a", { attrs: { href: "https://tailwindcss.com/" } }, [
-          _vm._v("Tailwind")
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ml-12" }, [
-      _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
-        _vm._v(
-          "\n                    Laravel Jetstream is built with Tailwind, an amazing utility first CSS framework that doesn't get in your way. You'll be amazed how easily you can build and maintain fresh, modern designs with this wonderful framework at your fingertips.\n                "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "ml-12" }, [
-      _c("div", { staticClass: "mt-2 text-sm text-gray-500" }, [
-        _vm._v(
-          "\n                    Authentication and registration views are included with Laravel Jetstream, as well as support for user email verification and resetting forgotten passwords. So, you're free to get started what matters most: building your application.\n                "
-        )
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -44777,6 +44678,24 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.mixin({
   methods: {
+    route: function (_route) {
+      function route(_x, _x2, _x3) {
+        return _route.apply(this, arguments);
+      }
+
+      route.toString = function () {
+        return _route.toString();
+      };
+
+      return route;
+    }(function (name, params, absolute) {
+      var config = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : Ziggy;
+      return route(name, params, absolute, config);
+    })
+  }
+});
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.mixin({
+  methods: {
     route: route
   }
 });
@@ -44838,8 +44757,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\jaar3\EpicIT\Theusprome\CMDB-offerte\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\jaar3\EpicIT\Theusprome\CMDB-offerte\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! E:\Xampp\htdocs\Sites\CMDB-offerte\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! E:\Xampp\htdocs\Sites\CMDB-offerte\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })
