@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Page;
+use App\Models\Product;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -18,7 +19,8 @@ class PageController extends Controller
     public function index()
     {   
         $pages = page::all();
-        return view('home', compact('pages'));
+        $products = product::limit(4)->get();
+        return view('home', ['products' => $products, 'pages' => $pages]);
     }
     /**
      * Show the form for creating a new resource.
