@@ -43,7 +43,7 @@ Route::get('/logout', function () {
 Route::get('/add-to-cart/{id}', [ProductController::class, 'getAddToCart'])->name('addToCart');
 Route::get('/shoping-cart', [ProductController::class, 'getCart'])->name('shoppingCart');
 Route::get('/reduce/{id}', [ProductController::class, 'getReduceByOne'])->name('reduce');
-Route::get('/increase/{id}', [ProductController::class, 'increaseByOne'])->name('increase');
+Route::get('/increase/{id}', [ProductController::class, 'getIncreaseByOne'])->name('increase');
 Route::get('/remove/{id}', [ProductController::class, 'getRemoveItem'])->name('remove');
 Route::get('/shopping-cart', function(){return view('shopping-cart');})->name('shopping-cart');
 
