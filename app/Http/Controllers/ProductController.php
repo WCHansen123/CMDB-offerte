@@ -121,7 +121,7 @@ class ProductController extends Controller
         } else {
             Session::forget('cart');
         }
-        return redirect()->route('shopping-cart');
+        return redirect()->back();
     }
     public function getRemoveItem($id)
     {
@@ -134,6 +134,17 @@ class ProductController extends Controller
         } else {
             Session::forget('cart');
         }
-        return redirect()->route('shopping-cart');
+        return redirect()->back();
+    }
+    public function increaseByOne(Request $request, $id)
+    {
+        $product = Product::find($id);
+        
+        $cart = new Cart();
+        $cart->add($product, $product->id);
+
+        $request->session()->put('cart', $cart);
+
+        return redirect()->back();
     }
 }
