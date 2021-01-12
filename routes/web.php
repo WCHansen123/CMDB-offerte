@@ -34,10 +34,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/account/orders', function
 })->name('orders');
 
 
-Route::get('/logout', function () {
-    Auth::logout();
-    return view('home');
-});
+Route::get('/logout', [PageController::class, 'indexlogout'])->name('logout');
 
 // shoping cart routes //
 Route::get('/add-to-cart/{id}', [ProductController::class, 'getAddToCart'])->name('addToCart');
