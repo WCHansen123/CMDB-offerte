@@ -29,7 +29,7 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-           'product_id'=>'required',
+            'product_id'=>'required',
             'user_id'=>'required',
             'total_price'=>'required'
         ]);

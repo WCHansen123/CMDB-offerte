@@ -99,10 +99,8 @@ class ProductController extends Controller
         $cart = new cart($oldCart);
         $cart->add($product, $product->id);
         $request->session()->put('cart',$cart);
-        // dd($request->session()->get('cart'));
-        return redirect()->route('products.index');
+        return redirect()->back();
     }
-
     public function getCart(){
         // get cart with added products
         if(!Session::has('cart')){
@@ -123,7 +121,7 @@ class ProductController extends Controller
         } else {
             Session::forget('cart');
         }
-        return redirect()->route('shopping-cart');
+        return redirect()->back();
     }
     public function getRemoveItem($id)
     {
@@ -136,6 +134,17 @@ class ProductController extends Controller
         } else {
             Session::forget('cart');
         }
-        return redirect()->route('shopping-cart');
+        return redirect()->back();
+    }
+    public function getIncreaseByOne(Request $request, $id)
+    {
+        $product = Product::find($id);
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->add($product, $product->id);
+
+        $request->session()->put('cart', $cart);
+
+        return redirect()->back();
     }
 }
