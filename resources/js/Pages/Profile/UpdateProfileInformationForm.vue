@@ -10,7 +10,6 @@
 
         <template #form>
             <!-- Profile Photo -->
-            <div>{{ $page.jetstream }}</div>
             <div class="col-span-6 sm:col-span-4">
                 <!-- Profile Photo File Input -->
                 <input type="file" class="hidden"
@@ -55,6 +54,34 @@
                 <jet-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" />
                 <jet-input-error :message="form.error('email')" class="mt-2" />
             </div>
+
+            <!-- Tel -->
+            <div class="col-span-6 sm:col-span-4">
+                <jet-label for="tel" value="Tel" />
+                <jet-input id="tel" type="text" class="mt-1 block w-full" v-model="form.tel" />
+                <jet-input-error :message="form.error('tel')" class="mt-2" />
+            </div>
+
+            <!-- zip -->
+            <div class="col-span-6 sm:col-span-4">
+                <jet-label for="zip" value="Zip" />
+                <jet-input id="zip" type="text" class="mt-1 block w-full" v-model="form.zip" />
+                <jet-input-error :message="form.error('zip')" class="mt-2" />
+            </div>
+
+            <!-- Street -->
+            <div class="col-span-6 sm:col-span-4">
+                <jet-label for="street" value="Street" />
+                <jet-input id="street" type="text" class="mt-1 block w-full" v-model="form.street" />
+                <jet-input-error :message="form.error('street')" class="mt-2" />
+            </div>
+
+            <!-- City -->
+            <div class="col-span-6 sm:col-span-4">
+                <jet-label for="city" value="City" />
+                <jet-input id="city" type="text" class="mt-1 block w-full" v-model="form.city" />
+                <jet-input-error :message="form.error('city')" class="mt-2" />
+            </div>
         </template>
 
         <template #actions>
@@ -97,6 +124,11 @@
                     '_method': 'PUT',
                     name: this.user.name,
                     email: this.user.email,
+                    tel: this.user.tel,
+                    zip: this.user.zip,
+                    street: this.user.street,
+                    city: this.user.city,
+                    user_role: this.user.user_role,
                     photo: null,
                 }, {
                     bag: 'updateProfileInformation',

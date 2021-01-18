@@ -14,6 +14,11 @@
 
                         <!-- Navigation Links -->
                         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                            <a :href="route('home')" :active="route().current('home')" style="padding: 22px 0px;">
+                                Home
+                            </a>
+                        </div>
+                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                             <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
                                 Dashboard
                             </jet-nav-link>
@@ -62,7 +67,7 @@
                                     <div class="border-t border-gray-100"></div>
 
                                     <!-- Team Management -->
-                                    <div v-if="$page.user.role === 'admin'">
+                                    <div v-if="$page.user.role == 'admin'">
                                     <template v-if="$page.jetstream.hasTeamFeatures">
                                         <div class="block px-4 py-2 text-xs text-gray-400">
                                             Manage Team
@@ -100,20 +105,8 @@
                                     </template>
                                     </div>
 
-                                    <div v-else="$page.user.all_teams[1].id === 2">
+                                    <div v-else="$page.user.all_teams[1].id == 1">
                                         <template v-if="$page.jetstream.hasTeamFeatures">
-                                        <div class="block px-4 py-2 text-xs text-gray-400">
-                                            Manage Team
-                                        </div>
-
-                                        <!-- Team Settings -->
-                                        <jet-dropdown-link :href="route('teams.show', $page.user.current_team)">
-                                            Team Settings
-                                        </jet-dropdown-link>
-
-                                        <jet-dropdown-link :href="route('teams.create')" v-if="$page.jetstream.canCreateTeams">
-                                            Create New Team
-                                        </jet-dropdown-link>
 
                                         <div class="border-t border-gray-100"></div>
 
