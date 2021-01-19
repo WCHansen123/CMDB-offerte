@@ -1,5 +1,5 @@
 <!-- Head -->
-@extends('includes\layout')
+@extends('includes/layout')
 <!-- Page Content -->
 @section('content')
     <div class="container mt-5">
