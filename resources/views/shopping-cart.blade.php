@@ -1,4 +1,4 @@
-@extends('includes\layout')
+@extends('includes/layout')
 <title>Shoping cart</title>
 @section('content')
 <div class="container" >

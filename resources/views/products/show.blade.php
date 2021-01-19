@@ -1,5 +1,5 @@
 <!-- Head -->
-@extends('includes\layout')
+@extends('includes/layout')
 
 @section('content')
 
