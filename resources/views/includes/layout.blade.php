@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"></link>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
+
     <link rel="stylesheet" href="{{URL::asset('../css/productscards.css')}}">
     <link rel="stylesheet" href="{{URL::asset('../css/nav.css')}}">
     <link rel="stylesheet" href="{{URL::asset('../css/contact.css')}}">
@@ -42,7 +42,7 @@
                 </li>
             </ul>
             <li class="nav-item form-inline"><a class="nav-link navbar-login" href="{{route('shoppingCart')}}">Shoppingcart</a>
-            <span class="badge badge-pill badge-warning">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}}</span>                     
+            <span class="badge badge-pill badge-warning">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}}</span>
             </li>
             <li class="nav-item form-inline">
                 @if(Auth::check())
@@ -70,7 +70,11 @@
         </div>
     </div>
 </nav>
-
+@if(session()->has('message'))
+    <div class="alert alert-warning">
+        {{ session()->get('message') }}
+    </div>
+@endif
     @yield('content')
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
